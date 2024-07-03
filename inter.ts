@@ -42,6 +42,7 @@ let tasks:Task[] = [];
 document.querySelector(".addTask")!.addEventListener('click',()=>{
     const taskNameInput = <HTMLInputElement>document.querySelector(".taskName");
     const taskName = taskNameInput.value;
+
    if(taskName){
     const taskItem:Task={
         name:taskName,
@@ -64,6 +65,9 @@ function updateTaskList(){
         taskListHTML  += `<li>${task.name} - 狀態: ${TaskStatus[task.status]}</li>`;
     })
     document.querySelector(".taskList")!.innerHTML = taskListHTML;
+
+    const input = <HTMLInputElement> document.querySelector(".taskName");
+    input.value = '';
 }
 
 
