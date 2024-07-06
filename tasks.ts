@@ -20,13 +20,8 @@
 
 // printbook(mybook);
 
-import{ TaskStatus } from'./types/TaskStatus.js'
-
-//介面型別
-interface Task{
-    name:string,
-    status:TaskStatus
-}
+import { TaskStatus } from "./types/TaskStatus.js";
+import { Task } from "./types/Task.js";
 
 // 定義任務狀態列舉
 
