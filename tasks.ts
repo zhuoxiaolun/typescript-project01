@@ -20,6 +20,7 @@
 
 // printbook(mybook);
 
+import{ TaskStatus } from'./types/TaskStatus.js'
 
 //介面型別
 interface Task{
@@ -29,11 +30,7 @@ interface Task{
 
 // 定義任務狀態列舉
 
-enum TaskStatus {
-    Todo,
-    InProgress,
-    Done
-}
+
 
 // 空任務陣列
 
